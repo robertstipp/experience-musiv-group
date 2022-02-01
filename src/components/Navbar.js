@@ -7,7 +7,7 @@ import {
   FiTwitter,
   FiYoutube,
 } from "react-icons/fi"
-import { logo } from "../assets/images/logo.svg"
+import logo from "../assets/images/Logo.svg"
 
 const Navbar = () => {
   const [show, setShow] = useState(false)
