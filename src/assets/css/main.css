@@ -520,6 +520,32 @@ button.block {
 /* Packages */
 /* ############## */
 
+.package-underline {
+  margin: 10px 0 10px 0;
+  width: 100%;
+  height: 1px;
+  background-color: white;
+}
+
+.package h4 {
+  margin-bottom: 0;
+  font-size: 1.5rem;
+}
+
+.package ul {
+  margin: 0;
+}
+
+.package h5 {
+  font-size: 2rem;
+  margin-bottom: 0;
+}
+
+.package p {
+  margin: 0;
+  font-size: 1rem;
+}
+
 .package-list {
   display: grid;
   grid-template-columns: 1fr;
@@ -529,7 +555,7 @@ button.block {
 }
 
 .package {
-  display: block;
+  display: flex;
   padding-top: 8%;
   height: 50vh;
   font-family: var(--bodyFont);
@@ -549,7 +575,7 @@ button.block {
     width: 12rem;
     display: block;
     padding-top: 8%;
-    height: 300px;
+    height: 350px;
     margin: 0;
   }
 
@@ -577,30 +603,4 @@ button.block {
     margin: 0;
     font-size: 0.75rem;
   }
-}
-
-.package-underline {
-  margin: 10px 0 10px 0;
-  width: 100%;
-  height: 1px;
-  background-color: white;
-}
-
-.package h4 {
-  margin-bottom: 0;
-  font-size: 3rem;
-}
-
-.package ul {
-  margin: 0;
-}
-
-.package h5 {
-  font-size: 2rem;
-  margin-bottom: 0;
-}
-
-.package p {
-  margin: 0;
-  font-size: 1rem;
 }
