@@ -1,13 +1,20 @@
 import React from "react"
 
-const PackageCard = ({ price, title, items }) => {
+const PackageCard = ({ price, title, products }) => {
   return (
-    <article>
-      <h3>{title}</h3>
-      <h4>{price}</h4>
-      {items.map(item => {
-        return <p>{item}</p>
-      })}
+    <article className="package">
+      <h4>{title}</h4>
+
+      <h5>${price}</h5>
+      <ul>
+        {products.map(product => {
+          return (
+            <li>
+              <p>{product}</p>
+            </li>
+          )
+        })}
+      </ul>
     </article>
   )
 }

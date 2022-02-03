@@ -3,13 +3,24 @@ import PackageCard from "./PackageCard"
 
 const PackageList = ({ packages = [] }) => {
   return (
-    <div>
-      <PackageCard
-        title="Package #1"
-        price="149"
-        items={["Playlist", "Billboard", "MTV"]}
-      />
-    </div>
+    <section className="package-list">
+      {packages.map(pack => {
+        const {
+          id,
+          packageTitle: title,
+          price,
+          products: { products },
+        } = pack
+        return (
+          <PackageCard
+            key={id}
+            title={title}
+            price={price}
+            products={products}
+          />
+        )
+      })}
+    </section>
   )
 }
 

@@ -515,3 +515,92 @@ button.block {
     grid-template-columns: 2fr 1fr;
   }
 }
+
+/* ############## */
+/* Packages */
+/* ############## */
+
+.package-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 1rem;
+  width: 80vw;
+  margin: auto;
+}
+
+.package {
+  display: block;
+  padding-top: 8%;
+  height: 50vh;
+  font-family: var(--bodyFont);
+  color: white;
+  border: solid rgb(122, 221, 175) 2px;
+  background-color: #0c1814;
+  text-align: center;
+  margin: 0;
+}
+
+@media screen and (min-width: 992px) {
+  .package-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+  .package {
+    width: 12rem;
+    display: block;
+    padding-top: 8%;
+    height: 300px;
+    margin: 0;
+  }
+
+  .package-underline {
+    margin: 10px 0 10px 0;
+    width: 100%;
+    height: 1px;
+    background-color: white;
+  }
+
+  .package h4 {
+    margin-bottom: 0;
+    font-size: 1.5rem;
+  }
+
+  .package ul {
+    margin: 0;
+  }
+
+  .package h5 {
+    margin-bottom: 0;
+  }
+
+  .package p {
+    margin: 0;
+    font-size: 0.75rem;
+  }
+}
+
+.package-underline {
+  margin: 10px 0 10px 0;
+  width: 100%;
+  height: 1px;
+  background-color: white;
+}
+
+.package h4 {
+  margin-bottom: 0;
+  font-size: 3rem;
+}
+
+.package ul {
+  margin: 0;
+}
+
+.package h5 {
+  font-size: 2rem;
+  margin-bottom: 0;
+}
+
+.package p {
+  margin: 0;
+  font-size: 1rem;
+}

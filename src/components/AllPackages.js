@@ -20,6 +20,7 @@ const query = graphql`
 const AllPackages = () => {
   const data = useStaticQuery(query)
   const packages = data.allContentfulPackage.nodes
+  console.log(packages)
   return (
     <section>
       <PackageList packages={packages} />
